@@ -1,10 +1,10 @@
 ****
 
 * Consistency that every chapter has intro / conclusion and not just a list of stuff. Narrative structure
-* Make all examples legal as if possible.
+* Make all examples legal as if possible. @Gijs: added CJEU example on consumer protection in various sections. TO DO: go through the text and show the legal relevance for the examples we show.
 
 **** 
-1. It would be nice to have a large_n example of a power law distribution. Any suggestion of ready at hand yet comprehensible networks? @Gijs
+1. It would be nice to have a large_n example of a power law distribution. Any suggestion of ready at hand yet comprehensible networks? @Gijs -> DONE
 
 2. I think we can get rid of the trains examples in directed degree centrality, because the Karate Club is enough and more based on literature @Gustavo
 
@@ -16,11 +16,11 @@
 
 6. There must be a discussion about when/if centrality scores can be presented as a percentage (ie. normalized). I would think this is generally the right way to do things. All scores need to be normalized if possible (maybe normalization is not alawys desirable). @Gijs
 
-7. Fact check if Eigenvector centrality is a percentage as presented, or if it needs to be normalized first @Gijs
+7. Fact check if Eigenvector centrality is a percentage as presented, or if it needs to be normalized first @Gijs 
 
 ---
 
-9. Furniture websites dataset needs replacement. The legal history dataset might not work, because it relies heavily on node attributes and does not have long chains of links. @Gijs
+9. Furniture websites dataset needs replacement. The legal history dataset might not work, because it relies heavily on node attributes and does not have long chains of links. @Gijs -> DONE (replaced by case law network)
 
 10. Update page rank and eigenvector centrality to explain that they consider the weight of who links to you (and contrast this with results of other scores). So closeness considers "long chains of links" behind you, but PR / EC consider size or popularity of who inks you. Put this at the beginning of section @Gustavo
 

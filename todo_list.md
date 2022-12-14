@@ -16,7 +16,7 @@
 
 6. There must be a discussion about when/if centrality scores can be presented as a percentage (ie. normalized). I would think this is generally the right way to do things. All scores need to be normalized if possible (maybe normalization is not alawys desirable). @Gijs
 
-7. Fact check if Eigenvector centrality is a percentage as presented, or if it needs to be normalized first @Gijs 
+7. Fact check if Eigenvector centrality is a percentage as presented, or if it needs to be normalized first @Gijs -> FROM WHAT I'VE READ, IT'S NOT A NORMALIZED SCORE THAT CAN BE NORMALIZED, BUT THAT NORMALIZATION HAS LITTLE VALUE. PROPOSAL: WE DO NOT DISCUSS THIS IN OUR TEXTBOOK. 
 
 ---
 

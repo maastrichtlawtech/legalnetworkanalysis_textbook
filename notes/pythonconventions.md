@@ -1,0 +1,4 @@
+## Python conventions 
+* Please make sure the code cells can be run in order. I.e: first declare variables (e.g. load data into a dataframe), then use them. 
+* All variable names should be lowercase. Uppercase names are reserved for class declarations and instantiations.
+* When loading the same data into different data type objects, please add a prefix/suffix to the variable names indicating the data type (e.g. the 'kite' data set loaded once into a dataframe, once into a graph, and once into a matrix could be referred to as: df_kite, g_kite, m_kite). This is a good habit even if the data is only stored in one object.

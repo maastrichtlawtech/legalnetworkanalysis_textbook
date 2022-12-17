@@ -8,7 +8,7 @@ It will be most useful for those who already know some Python, but anyone can ge
 
 The math is mostly rudimentary and can be safely skipped. However it is there if you want it. In this way, the textbook occupiies an intermediate spot in the literature, between very basic manuals, and very advanced ones.
 
-The "nitty-gritty" of the textbook is done exclusively in [NetworkX](https://github.com/networkx/networkx). Since this library is  pure python, it is easier to read its source code and that transparency matters for understnading. Faster libraries are available for those who need them, but that remains for the reader to explore.
+The "nitty-gritty" of the textbook is done exclusively in [NetworkX](https://github.com/networkx/networkx). Since this library is  pure python, it is easier to read its source code and that transparency matters for understanding. Faster libraries are available for those who need them, but that remains for the reader to explore.
 
 >"when all you have a is hammer, everything looks like you as a nail".
 

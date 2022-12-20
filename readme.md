@@ -16,6 +16,4 @@ The "nitty-gritty" of the textbook is done exclusively in [NetworkX](https://git
 
 The purpose of this work is to provide aspiring legal analysts (Cfr. [Farnsworth 2007](https://www.amazon.com/Legal-Analyst-Toolkit-Thinking-about/dp/0226238350)) with more than just a hammer, with a tool to see in the dark.
 
-The textbook is present as a single file in the main branch of the repo. Appendixes with more detail are listed as follows:
-* Appendix 1: Text similarity network
-* TBD
+The textbook is present as a single file in the main branch of the repo. 

@@ -1,0 +1,8 @@
+my home ikea {}
+my home fun furniture {}
+fun furniture ikea {}
+home improvement amazon {}
+home improvement ikea {}
+ikea amazon {}
+all plants my home {}
+amazon ikea {}

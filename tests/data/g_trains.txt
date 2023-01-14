@@ -1,0 +1,29 @@
+Amsterdam Utrecht {}
+Amsterdam Rotterdam {}
+Amsterdam Schiphol {}
+Amsterdam The Hague {}
+Amsterdam Zwolle {}
+Amsterdam Groningen {}
+Utrecht Eindhoven {}
+Utrecht Venlo {}
+Utrecht Gouda {}
+Utrecht Schiphol {}
+Utrecht Putten {}
+Utrecht Nijmegen {}
+Utrecht Groningen {}
+Utrecht Zwolle {}
+Utrecht Gelderlmalsen {}
+Utrecht Groningen  {}
+Utrecht The Hague {}
+Gouda Rotterdam {}
+Weert Eindhoven {}
+Weert Roermond {}
+Eindhoven Schiphol {}
+Eindhoven Venlo {}
+Eindhoven Tilburg {}
+Roermond Maastricht {}
+Venlo Nijmegen {}
+Groningen Zwolle {}
+Rotterdam The Hague {}
+Tilburg Roosendal {}
+Roosendal Middelburg {}

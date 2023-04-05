@@ -1,0 +1,304 @@
+{
+	"directed": true,
+	"multigraph": false,
+	"graph": {
+
+	},
+	"nodes": [
+		{
+			"id": "R16545"
+		},
+		{
+			"id": "R16556"
+		},
+		{
+			"id": "C10099",
+            "type":"source"
+		},
+		{
+			"id": "C10415",
+            "type":"source"
+		},
+		{
+			"id": "C10705",
+            "type":"source"
+		},
+		{
+			"id": "RRC4123"
+		},
+		{
+			"id": "RLMech777"
+		},
+		{
+			"id": "RLMech7781"
+		},
+		{
+			"id": "RLMech7782"
+		},
+		{
+			"id": "RLZutph1"
+		},
+		{
+			"id": "RLVoet201"
+		},
+		{
+			"id": "RRInst464"
+		},
+		{
+			"id": "RRD6123"
+		},
+		{
+			"id": "RRC236"
+		},
+		{
+			"id": "RRD21438"
+		},
+		{
+			"id": "RRAuthCod81324"
+		},
+		{
+			"id": "RRAuthCod41014"
+		},
+		{
+			"id": "RRNov41"
+		},
+		{
+			"id": "RRNov42"
+		},
+		{
+			"id": "RLPerez2"
+		},
+		{
+			"id": "RRInst416"
+		},
+		{
+			"id": "RRC73212"
+		},
+		{
+			"id": "RFHed125044"
+		},
+		{
+			"id": "RFHed125045"
+		},
+		{
+			"id": "RRC2320"
+		},
+		{
+			"id": "RRD41247"
+		},
+		{
+			"id": "RLFab771"
+		},
+		{
+			"id": "RRD613"
+		},
+		{
+			"id": "RRC2572"
+		},
+		{
+			"id": "IRPlaccaat"
+		}
+	],
+	"links": [
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "R16556"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRC4123"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLMech777"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLMech7781"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLMech7782"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLZutph1"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLVoet201"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRInst464"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRD6123"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRC236"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRD21438"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRAuthCod81324"
+		},
+		{
+			"weight": 2,
+			"source": "C10099",
+			"target": "RRAuthCod41014"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRNov41"
+		},
+		{
+			"weight": 2,
+			"source": "C10099",
+			"target": "RRNov42"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLPerez2"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRInst416"
+		},
+		{
+			"weight": 3,
+			"source": "C10099",
+			"target": "RRC73212"
+		},
+		{
+			"weight": 4,
+			"source": "C10099",
+			"target": "RFHed125044"
+		},
+		{
+			"weight": 2,
+			"source": "C10099",
+			"target": "RFHed125045"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRC2320"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RRD41247"
+		},
+		{
+			"weight": 1,
+			"source": "C10099",
+			"target": "RLFab771"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "R16545"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "R16556"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "C10099"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "RRC4123"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "RLMech777"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "RLVoet201"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "RRAuthCod41014"
+		},
+		{
+			"weight": 3,
+			"source": "C10415",
+			"target": "RRC73212"
+		},
+		{
+			"weight": 3,
+			"source": "C10415",
+			"target": "RFHed125044"
+		},
+		{
+			"weight": 2,
+			"source": "C10415",
+			"target": "RFHed125045"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "RRD613"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "RRC2572"
+		},
+		{
+			"weight": 1,
+			"source": "C10415",
+			"target": "IRPlaccaat"
+		},
+		{
+			"weight": 1,
+			"source": "C10705",
+			"target": "C10415"
+		},
+		{
+			"weight": 2,
+			"source": "C10705",
+			"target": "RRC73212"
+		},
+		{
+			"weight": 1,
+			"source": "C10705",
+			"target": "RFHed125044"
+		},
+		{
+			"weight": 1,
+			"source": "C10705",
+			"target": "RFHed125045"
+		}
+	]
+}

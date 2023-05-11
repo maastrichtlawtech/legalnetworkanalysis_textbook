@@ -2,6 +2,7 @@
 import json
 import networkx as nx
 import matplotlib.pyplot as plt
+import numpy as np
 
 def load_graph_from_json(path):
     f = open(path, "r")

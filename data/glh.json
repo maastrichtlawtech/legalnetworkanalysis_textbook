@@ -6,10 +6,12 @@
 	},
 	"nodes": [
 		{
-			"id": "R16545"
+			"id": "R16545",
+			"type":"Roman law"
 		},
 		{
-			"id": "R16556"
+			"id": "R16556",
+			"type":"Roman law"
 		},
 		{
 			"id": "C10099",
@@ -24,7 +26,8 @@
             "type":"source"
 		},
 		{
-			"id": "RRC4123"
+			"id": "RRC4123",
+			"type":"English Law"
 		},
 		{
 			"id": "RLMech777"

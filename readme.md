@@ -55,7 +55,7 @@ The code-part of the textbook is done exclusively in [NetworkX](https://github.c
 
 [2. Network Properties](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_2_Network_Properties.ipynb)
 
-[3. Network Centrality](#3_Network_Centrality)
+[3. Network Centrality](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_3_Centrality.ipynb)
 
 [4. Community Detection](#4_Community_Detection)
 

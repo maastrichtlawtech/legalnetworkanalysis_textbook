@@ -51,7 +51,7 @@ The code-part of the textbook is done exclusively in [NetworkX](https://github.c
 ## Chapters
 [Welcome](#Welcome)
 
-[1. Network Analysis: An Introduction](#1_Network_Analysis:_An_Introduction)
+[1. Network Analysis: An Introduction](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_1_Introduction.ipynb)
 
 [2. Network Properties](#2_Network_Properties)
 

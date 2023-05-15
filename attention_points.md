@@ -9,3 +9,5 @@
 ~~* last part of HITS does not work now, possibly I am normalizing wrong. ~~
 ~~* Chapter 4 eigenvalues of karate club dont match
 * Check whether graph plot of appendix 2 is correct
+* Appendix 4 feels weak and perhaps unnecessary
+* deppendencies need updating

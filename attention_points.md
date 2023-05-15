@@ -7,3 +7,4 @@
 * make obergefell more realistic?
 ~~* page rank math is not fully explained, something must be said about teleportation there~~
 ~~* last part of HITS does not work now, possibly I am normalizing wrong. ~~
+~~* Chapter 4 eigenvalues of karate club dont match

@@ -15,7 +15,6 @@ Edition 1 (version 1) (2023)
 
 This textbook is released under a CC BY license. This license lets you distribute, remix, adapt, and build upon our work, even commercially, as long as you credit us for the original creation. 
 
-
 ![license](images/cclicense.png)
 
 **Work in progress, do not cite or share**
@@ -57,15 +56,21 @@ The code-part of the textbook is done exclusively in [NetworkX](https://github.c
 
 [3. Network Centrality](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_3_Centrality.ipynb)
 
-[4. Community Detection](#4_Community_Detection)
+[4. Community Detection](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_4_Communities.ipynb)
 
-[5. Data Collection and Data Preparation](#5_Data_Collection_and_Data_Preparation)
+[5. Data Collection and Data Preparation](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_5_Data_Collection_and_Preparation.ipynb)
 
-[6. Software](#6_Software)
+[6. Software](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Chapter_6_Software.ipynb)
+
+[Appendix 1 Getting data into NetworkX](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Appendix_1_Getting_data_in.ipynb)
+
+[Appendix 2 Text Similarity Networks](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Appendix_2_Text_Similarity_Net.ipynb)
+
+[Appendix 3 Normalization](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Appendix_3_Normalization.ipynb)
+
+[Appendix 4 Vector Scaling and Normalization](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Appendix_4_Vector_Scaling.ipynb)
 
 [Bibliography](#Bibliography)
 
-## Appendices
-Text similarity network
 
 

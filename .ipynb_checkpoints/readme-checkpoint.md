@@ -47,6 +47,12 @@ We, the authors, hope you will enjoy our introduction to Legal Network Analysis.
 
 The code-part of the textbook is done exclusively in [NetworkX](https://github.com/networkx/networkx). Since this library is  pure python, it is easier to read its source code and that transparency matters for understanding. Faster libraries are available for those who need them, but that remains for the reader to explore.
 
+For dependencies (besides the usual stuff) make sure you have up to date versions of: 
+* [networkx](https://pypi.org/project/networkx/)
+* [pydot](https://pypi.org/project/pydot/)
+* [text-distance](https://pypi.org/project/textdistance/)
+* [scipy](https://pypi.org/project/scipy/)
+
 ## Chapters
 [Welcome](#Welcome)
 

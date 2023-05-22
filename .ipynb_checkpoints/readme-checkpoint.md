@@ -76,7 +76,5 @@ For dependencies (besides the usual stuff) make sure you have up to date version
 
 [Appendix 4 Vector Scaling and Normalization](https://github.com/maastrichtlawtech/legalnetworkanalysis_textbook/blob/main/Appendix_4_Vector_Scaling.ipynb)
 
-[Bibliography](#Bibliography)
-
 
 

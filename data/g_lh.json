@@ -7,99 +7,123 @@
 	"nodes": [
 		{
 			"id": "R16545",
-			"type":"Roman law"
+			"type":"Case law"
 		},
 		{
 			"id": "R16556",
-			"type":"Roman law"
+			"type":"Case law"
 		},
 		{
 			"id": "C10099",
-            "type":"source"
+            "type":"Basic source"
 		},
 		{
 			"id": "C10415",
-            "type":"source"
+            "type":"Basic source"
 		},
 		{
 			"id": "C10705",
-            "type":"source"
+            "type":"Basic source"
 		},
 		{
 			"id": "RRC4123",
-			"type":"English Law"
+			"type":"Roman law"
 		},
 		{
-			"id": "RLMech777"
+			"id": "RLMech777",
+			"type":"Customary law"
 		},
 		{
-			"id": "RLMech7781"
+			"id": "RLMech7781",
+			"type":"Customary law"
 		},
 		{
-			"id": "RLMech7782"
+			"id": "RLMech7782",
+			"type":"Customary law"
 		},
 		{
-			"id": "RLZutph1"
+			"id": "RLZutph1",
+			"type":"Customary law"
 		},
 		{
-			"id": "RLVoet201"
+			"id": "RLVoet201",
+			"type":"Customary law"
 		},
 		{
-			"id": "RRInst464"
+			"id": "RRInst464",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRD6123"
+			"id": "RRD6123",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRC236"
+			"id": "RRC236",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRD21438"
+			"id": "RRD21438",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRAuthCod81324"
+			"id": "RRAuthCod81324",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRAuthCod41014"
+			"id": "RRAuthCod41014",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRNov41"
+			"id": "RRNov41",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRNov42"
+			"id": "RRNov42",
+			"type":"Roman law"
 		},
 		{
-			"id": "RLPerez2"
+			"id": "RLPerez2",
+			"type":"Customary law"
 		},
 		{
-			"id": "RRInst416"
+			"id": "RRInst416",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRC73212"
+			"id": "RRC73212",
+			"type":"Roman law"
 		},
 		{
-			"id": "RFHed125044"
+			"id": "RFHed125044",
+			"type":"Customary law"
 		},
 		{
-			"id": "RFHed125045"
+			"id": "RFHed125045",
+			"type":"Customary law"
 		},
 		{
-			"id": "RRC2320"
+			"id": "RRC2320",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRD41247"
+			"id": "RRD41247",
+			"type":"Roman law"
 		},
 		{
-			"id": "RLFab771"
+			"id": "RLFab771",
+			"type":"Customary law"
 		},
 		{
-			"id": "RRD613"
+			"id": "RRD613",
+			"type":"Roman law"
 		},
 		{
-			"id": "RRC2572"
+			"id": "RRC2572",
+			"type":"Roman law"
 		},
 		{
-			"id": "IRPlaccaat"
+			"id": "IRPlaccaat",
+			"type":"Customary law"
 		}
 	],
 	"links": [

@@ -1,15 +1,12 @@
 
 # INTRODUCTION TO LEGAL NETWORK ANALYSIS
 
-Edition 1 (version 1) (2023)
+Version 0.1 (November 2023)
 
 ## AUTHORS
 - Gustavo Arosemena
 - Gijs van Dijck
 - Roland Moerland
-
-## CONTRIBUTORS
-- Maxine Hanrieder
 
 ## LICENSE
 

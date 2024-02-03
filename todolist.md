@@ -8,3 +8,5 @@
 4. all images should just be images in the pdf, and not code generated, unless there is a "follow along"  reason for giving the code  alternatively create a section on plotting
 5. Check notation on repeat multiplication formulas
 
+6. Tighten talk of normalization thorought
+7. Amsterdam is the most intuitive example of a high Eigenvector centrality node, it has direct connections to important stations, but it is not super centric in itself

@@ -1,8 +1,10 @@
 # To do list
 
-All notebooks run sequentially. Pending issues remain
 
-1. Spellchecking
-2. Consider deleting appendixes for publication (move to a nightly branch)
-3. Graphviz and pydot are problematic. Pydot is deprecated. Find a replacement for directed graphs, especially g_obergefell
-4. The legal history plot is not nice. Nx does not have gephi visualizations like force atlas. Would it be ok to just add an image from Gephi?
+
+1. Pydot is deprecated. I need a new layout for the obergefell plot.
+2. Double check of using latex for mention of variables (v, w) within paragraphs
+3. Double check closeness / betweeness (sum of path lenghts, vs sum of paths)
+4. all images should just be images in the pdf, and not code generated, unless there is a "follow along"  reason for giving the code  alternatively create a section on plotting
+5. Check notation on repeat multiplication formulas
+

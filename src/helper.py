@@ -17,11 +17,11 @@ def score_normalize(dictvalues):
     values_total = np.sum(np.abs(dictvalues_arr))
     return dictvalues_arr/values_total
 
-def draw_spring(graph, seed=123, node_color="blue", figsize=(8,8)):
+def draw_spring(graph, seed=123, node_color="tab:blue", figsize=(8,8), node_alpha = 0.7, edge_alpha=0.7):
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(figsize))
     pos = nx.spring_layout(graph, seed = seed)
-    nx.draw_networkx_nodes(graph, pos=pos, node_color=node_color, ax=ax)
-    nx.draw_networkx_edges(graph, pos=pos, ax=ax)
+    nx.draw_networkx_nodes(graph, pos=pos, node_color=node_color, ax=ax, alpha=node_alpha)
+    nx.draw_networkx_edges(graph, pos=pos, ax=ax, alpha = edge_alpha)
     nx.draw_networkx_labels(graph, pos=pos, ax=ax);
 
 # this function does not import for some reason. Error is not explicit

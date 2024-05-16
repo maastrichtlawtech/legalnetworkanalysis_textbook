@@ -12,10 +12,10 @@ def load_graph_from_json(path):
     graph = nx.node_link_graph(data)
     return graph
 
-def score_normalize(dictvalues):
-    dictvalues_arr = np.array([x for x in dictvalues])
-    values_total = np.sum(np.abs(dictvalues_arr))
-    return dictvalues_arr/values_total
+# def score_normalize(dictvalues):
+#     dictvalues_arr = np.array([x for x in dictvalues])
+#     values_total = np.sum(np.abs(dictvalues_arr))
+#     return dictvalues_arr/values_total
 
 def draw_spring(graph, seed=123, node_color="tab:blue", figsize=(8,8), node_alpha = 0.7, edge_alpha=0.7):
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(figsize))
@@ -23,6 +23,23 @@ def draw_spring(graph, seed=123, node_color="tab:blue", figsize=(8,8), node_alph
     nx.draw_networkx_nodes(graph, pos=pos, node_color=node_color, ax=ax, alpha=node_alpha)
     nx.draw_networkx_edges(graph, pos=pos, ax=ax, alpha = edge_alpha)
     nx.draw_networkx_labels(graph, pos=pos, ax=ax);
+
+def dataframe_from_results(graph, results_dict, name):
+    nodes = list(graph.nodes)
+    df = pd.DataFrame({"nodes":nodes, f"{name}":results_dict.values()})
+    df.set_index("nodes", inplace=True)
+    return df
+
+def score_normalize(input, from_dictionary=True):
+    if from_dictionary == True:
+        scores = np.array(list(input.values()))
+        sum_scores = np.sum(scores)
+        return scores/sum_scores
+    else:
+        scores = list(input)
+        scores = np.array(input.to_list())
+        sum_scores = np.sum(scores)
+        return scores/sum_scores
 
 # this function does not import for some reason. Error is not explicit
 # def compare_centrality(graph, title):

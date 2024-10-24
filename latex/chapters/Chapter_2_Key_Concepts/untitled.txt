@@ -1,37 +1,4 @@
-% Common parameters
-\title{Legal Network Analysis}
-\author{G,G,R}
-\date{\today}
-% +++++++++++++++++++++++++++++++++++++++++++++ CONFIGURATION ++++++++++++++++++++++++++++++++++++++++
-% parameter for the print version (i.e. generate the blank pages)
-\def\printversion{true}
-% parameter to display appendices normally or simply the line in ToC
-%  NB: this is useful if you do not want to include the appendices into the text but you want to keep
-%       appendices lines in the ToC and also the labels for referencing
-\def\displayappendices{true}
-% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\documentclass[16pt,a4paper,twoside,openright]{memoir}
-%\setulmarginsandblock{2.5cm}{2cm}{*}
-%\setlrmarginsandblock{1.5cm}{1.5cm}{*}
-\setulmarginsandblock{3cm}{3cm}{*}
-\setlrmarginsandblock{3cm}{3cm}{*}
-%\renewcommand*\familydefault{\sfdefault} % use this to change overall font
-\renewcommand*\familydefault{ppl}
-\checkandfixthelayout
-% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-% custom packages (contain all required usepackage's)
-%\usepackage{styles/generic-book}
-% ****************************** REMOVE BEFORE SUBMISSION - START ******************************
-%\usepackage{draftwatermark}
-%\SetWatermarkText{DRAFT}
-%\SetWatermarkScale{1}
-% ******************************* REMOVE BEFORE SUBMISSION - END *******************************
-%
-%\makeindex
-%\makeglossaries
-%
-
-% ****************************** JUPYTER CONTENT - START ******************************
+\documentclass[11pt]{article}
 
     \usepackage[breakable]{tcolorbox}
     \usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)
@@ -200,7 +167,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{Chapter\_1\_Introduction}
+    \title{Chapter\_2\_Key\_Concepts}
     
     
     
@@ -418,47 +385,8 @@
     
     \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
     
-
-% ******************************* JUPYTER CONTENT - END *******************************
-
-
-
+    
 
 \begin{document}
-  % content starts here
-
-DESCRIPTION
-
-  \setcounter{page}{1}
-%  \include{parts/abstract}
-%  \include{parts/foreword}
-%  \include{parts/acknowledgements}
-  % this part takes roman numerals page numbering
-  \frontmatter
-%  \pagestyle{cover}
-%  \include{parts/toc}
-%  \include{parts/lof}
-%  \include{parts/acronyms}
-  % for the rest, page numbering is arabic
-  \mainmatter
-%  \pagestyle{standard}
-  \include{chapters/Chapter_1_Introduction.tex}
-  \include{chapters/Chapter_2_Key_Concepts/Chapter_2_Key_Concepts.tex}
-
-
-  
-%  \include{chapters/background}
-%  \include{chapters/framework}
-%  \include{chapters/system}
-%  \include{chapters/experiments}
-%  \include{chapters/conclusion}
-  \setcounter{chapter}{0}
-%  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}} % for other parts (i.e. appendices), do not count sections, subsections, ...
-%  \addtocontents{ptc}{\protect\setcounter{tocdepth}{2}} % but for appendices' toc's, keep depth to 2
-%  \include{parts/references}
-%  \addtocontents{toc}{\protect\newpage}
-%  \include{parts/index}
-%  \appendix
-%  \pagestyle{standard}
-  %\specialinclude{appendices/slugified-name}{Titled name}{app:label}
-\end{document}
+    
+    \maketitle

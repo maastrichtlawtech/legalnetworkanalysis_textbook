@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Appendix_2_Text_Similarity_Net.ipynb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #5e946c;}
+.s1 { color: #a8afbe;}
+.s2 { color: #2ea9aa;}
+.s3 { color: #acac58;}
+.s4 { color: #54806d;}
+.s5 { color: #ccb86c;}
+.s6 { color: #bb8f73;}
+.ls0 { height: 1px; border-width: 0; color: #4d4d4d; background-color:#4d4d4d}
+</style>
+</head>
+<body bgcolor="#132623">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Appendix_2_Text_Similarity_Net.ipynb</font>
+</center></td></tr></table>
+<pre><span class="s0">#%% md 
+</span><span class="s1"># Appendix 2 Text Similarity Networks <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s2">import </span><span class="s1">networkx </span><span class="s2">as </span><span class="s1">nx</span>
+<span class="s2">import </span><span class="s1">pandas </span><span class="s2">as </span><span class="s1">pd</span>
+<span class="s2">import </span><span class="s1">seaborn </span><span class="s2">as </span><span class="s1">sns</span>
+<span class="s2">import </span><span class="s1">numpy </span><span class="s2">as </span><span class="s1">np</span>
+<span class="s2">import </span><span class="s1">matplotlib.pyplot </span><span class="s2">as </span><span class="s1">plt</span>
+<span class="s2">import </span><span class="s1">textdistance</span>
+<span class="s2">from </span><span class="s1">src.helper </span><span class="s2">import </span><span class="s1">draw_spring</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">One possible application of network analysis in law is to compare text and identify the texts that are most similar or more different, or which text cluster together. Here we will introduce a basic approach for doing this, using a text distance measure to create a network of text similarity.  
+ 
+For this we will need to import that package textdistance  
+```python  
+import textdistance 
+``` <hr class="ls0"></span><span class="s0">#%% md 
+</span><span class="s1">We start with some Amazon reviews of the book &quot;The Ordinary Virtues&quot; by Michael Ignatieff, which you can see below. These were just copy-pasted from Amazon. <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s1">df_reviews = pd.read_csv(</span><span class="s3">&quot;data/ignatieff_reviews.csv&quot;</span><span class="s1">)</span><hr class="ls0"><span class="s0">#%% 
+</span><span class="s1">df_reviews</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">The next thing is to use a measure of distance to compare every text to each other. The simplest measure of distance is jaccard similarity. Such measure simply counts the ratio (the faction) of the set of tokens (that is mostly words) that are found in both documents and divides it by the total set of tokens that is found in both documents. That is: 
+ 
+$ J(A,B) = \frac{\vert A \cap B \vert}{\vert A \cup B \vert} $ <hr class="ls0"></span><span class="s0">#%% md 
+</span><span class="s1">With code we can calculate jaccard distance for every pair (i,j) of reviews, store it in an array, and turn it into a 9x9 matrix.  
+ <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s4"># initialize an empty list to store the results</span>
+<span class="s1">sim = []</span>
+<span class="s4"># compare every one of the reviews...</span>
+<span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">df_reviews.Review:</span>
+<span class="s4"># with every other of the reviews...</span>
+    <span class="s2">for </span><span class="s1">j </span><span class="s2">in </span><span class="s1">df_reviews.Review:</span>
+<span class="s4"># using jaccard distance...</span>
+        <span class="s1">result = textdistance.algorithms.jaccard(i</span><span class="s5">,</span><span class="s1">j)</span>
+<span class="s4"># store the results in the list</span>
+        <span class="s1">sim.append(result)</span>
+<span class="s4"># finally turn the list into a matrix</span>
+<span class="s1">simMatrix = np.array(sim).reshape(</span><span class="s6">9</span><span class="s5">,</span><span class="s6">9</span><span class="s1">)</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">For insight we can visualize the matrix as a heatmap. This heatmap has been designed so that the &quot;hotter&quot; the coolor is, the more there is a similarity between the two texts. Note that the diagonal of ones in red simply denotes that every document has also been compared to itself, and that every document is maximally similar to itself. We might prefer to change these 1s into 0s, because they are not really informative, but that would make the code more complex, so for our purposes we just leave it as it is. <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s1">plt.figure(figsize=(</span><span class="s6">8</span><span class="s5">,</span><span class="s6">8</span><span class="s1">))</span>
+<span class="s1">sns.heatmap(simMatrix</span><span class="s5">, </span><span class="s1">vmax=</span><span class="s6">1</span><span class="s5">, </span><span class="s1">vmin=</span><span class="s6">0</span><span class="s5">, </span><span class="s1">annot=</span><span class="s2">True</span><span class="s5">, </span><span class="s1">cmap=</span><span class="s3">&quot;coolwarm&quot;</span><span class="s1">)</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">Note that by necessity in this matrix there are values for every combination of rows and columns. This signals that the resulting matrix will be fully connected. Also note that the diagonal is made of 1. This means that every doucument is maximally similar to itself. Note that the matrix is 9x9 and symmetrical (what is above the diagonal is a mirror image of what is below it). This will necessarily result from the comparision process, which will always produce a $ M \times M $ matrix of this sort.  
+ 
+Such a matrix can be just directly fed into networkx to make a graph. 
+ 
+However it is best to remove the 1s in the diagonal and replace them with 0, as there is no point in stating that every document is linked to itself. 
+ <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s1">np.fill_diagonal(simMatrix</span><span class="s5">, </span><span class="s6">0</span><span class="s1">)</span>
+<span class="s1">plt.figure(figsize=(</span><span class="s6">8</span><span class="s5">,</span><span class="s6">8</span><span class="s1">))</span>
+<span class="s1">sns.heatmap(simMatrix</span><span class="s5">, </span><span class="s1">vmax=</span><span class="s6">1</span><span class="s5">, </span><span class="s1">vmin=</span><span class="s6">0</span><span class="s5">, </span><span class="s1">annot=</span><span class="s2">True</span><span class="s5">, </span><span class="s1">cmap=</span><span class="s3">&quot;coolwarm&quot;</span><span class="s1">)</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">Now we can create the graph and draw the network <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s1">g_docs = nx.from_numpy_matrix(simMatrix)</span>
+<span class="s1">plt.figure(figsize=(</span><span class="s6">8</span><span class="s5">,</span><span class="s6">8</span><span class="s1">))</span>
+<span class="s1">pos = nx.spring_layout(g_docs</span><span class="s5">, </span><span class="s1">seed=</span><span class="s6">123</span><span class="s1">)</span>
+<span class="s1">nx.draw_networkx_nodes(g_docs</span><span class="s5">, </span><span class="s1">pos)</span>
+<span class="s1">lowweight = [e </span><span class="s2">for </span><span class="s1">e </span><span class="s2">in </span><span class="s1">g_docs.edges </span><span class="s2">if </span><span class="s1">g_docs.edges[e][</span><span class="s3">'weight'</span><span class="s1">] &lt; </span><span class="s6">0.3</span><span class="s1">]</span>
+<span class="s1">highweight = [e </span><span class="s2">for </span><span class="s1">e </span><span class="s2">in </span><span class="s1">g_docs.edges </span><span class="s2">if </span><span class="s1">g_docs.edges[e][</span><span class="s3">'weight'</span><span class="s1">] &gt; </span><span class="s6">0.3</span><span class="s1">]</span>
+<span class="s1">nx.draw_networkx_edges(g_docs</span><span class="s5">, </span><span class="s1">pos = pos</span><span class="s5">, </span><span class="s1">edge_color=</span><span class="s3">&quot;green&quot;</span><span class="s1">)</span>
+<span class="s4"># nx.draw_networkx_edges(g_docs, edgelist=highweight, pos=pos, edge_color='green')</span>
+<span class="s4"># nx.draw_networkx_edges(g_docs, edgelist=lowweight, alpha=0.4, pos=pos, edge_color='red')</span>
+<span class="s1">nx.draw_networkx_labels(g_docs</span><span class="s5">, </span><span class="s1">pos=pos);</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">Having such a network, one can venture to find which are the most central reviews, the most prototypical ones using measures that are covered in the main text: <hr class="ls0"></span><span class="s0">#%% 
+</span><span class="s1">close = nx.closeness_centrality(g_docs</span><span class="s5">, </span><span class="s1">distance=</span><span class="s3">&quot;weight&quot;</span><span class="s1">)</span>
+<span class="s1">eig = nx.eigenvector_centrality(g_docs</span><span class="s5">, </span><span class="s1">weight=</span><span class="s3">&quot;weight&quot;</span><span class="s1">)</span>
+<span class="s1">pd.DataFrame({</span><span class="s3">&quot;Reviewer&quot;</span><span class="s1">:df_reviews.Reviewer</span><span class="s5">, </span><span class="s3">&quot;closeness&quot;</span><span class="s1">: list(dict(close).values())</span><span class="s5">, </span><span class="s3">&quot;eig&quot;</span><span class="s1">: list(dict(eig).values())})</span><hr class="ls0"><span class="s0">#%% md 
+</span><span class="s1">Jaccard similarity is possibly the most basic measure of text dsitance, but many others exist, and depending on the measure used it may be wise to pre-process the text before making comparisons, for example removing stopwords. All of this would be beyond the scope of this presentation.</span></pre>
+</body>
+</html>

@@ -1,4 +1,11 @@
 
+
+🛑 WORK ON THIS PROJECT HAS MOVED TO https://github.com/maastrichtlawtech/legal-network-textbook ❗
+
+🚧 PLEASE FOLLOW UP CONSTRUCTION IN THE NEW REPOSITORY 🚧
+
+
+
 # INTRODUCTION TO LEGAL NETWORK ANALYSIS
 
 Version 0.1 (November 2023)
